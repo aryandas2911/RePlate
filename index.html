@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Replate - Food Donation</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Replate - Connecting Homes, Restaurants & Charities</title>
     <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <script src="app.js"></script>
     <!-- Header Section -->
     <header>
         <div class="header1">
@@ -23,7 +24,7 @@
                     <option>My Profile</option>
                     <option>My Donations</option>
                     <option>Track Donation</option>
-                    <option>Our Activites</option>
+                    <option>Our Activities</option>
                     <option>FAQs</option>
                 </select>
             </div>
@@ -35,19 +36,19 @@
                     <button style="font-size: 1rem;color: white;">Customer Care</button>
                 </div>
                 <div>
-                    <button id="pricing">Pricing</button>
+                    <button onclick="window.location.href='pricing.html'" style="color: white;" id="pricing">Pricing</button>
                 </div>
                 <div id="reg">
                     <div>
                         <i class="fa-solid fa-user"></i>
                     </div>
-                    <button style="font-size: 1rem;color: white;">Register/Login</button>
+                    <button onclick="window.location.href='login.html'" style="font-size: 1rem;color: white;">Register/Login</button>
                 </div>
             </div>
         </div>
         <div class="header2">
             <div class="logo">
-                <img src="RePlateicon.png">
+                <img src="RePlateicon.png" alt="Logo">
             </div>
             <h1 class="project-name">RePlate</h1>
             <button class="visit-charity-btn">Visit Nearest Charity</button>
@@ -71,7 +72,7 @@
             </div>
             <div class="donate-button">
                 <p>"Turn Excess, Into Success"</p>
-                <button id="donation-request-btn">Make a Donation Request</button>
+                <button onclick="window.location.href='donation_request.html'" id="donation-request-btn">Make a Donation Request</button>
             </div>
         </div>
         
@@ -100,19 +101,22 @@
                 <br>
                 What Sets Us Apart:
                 <br>
-                Sustainability at Heart: We prioritize eco-friendly practices, from using sustainable containers for food donations to exploring partnerships with electric vehicle companies to reduce the carbon footprint of deliveries.
-                Real-Time Connections: Our platform connects food donors with local charities and food banks in real time, ensuring that surplus food is collected and delivered quickly, minimizing waste.
-                Smart Inventory Management: By integrating AI and predictive analytics, Replate helps donors manage their surplus inventory and forecast future needs, reducing overproduction and food waste.
-                Community Impact: With every donation, you are not only reducing waste but also supporting the fight against hunger. We believe in creating a more equitable food system where no meal goes to waste, and every person has access to nutritious food.
+                <b>Sustainability at Heart:</b> We prioritize eco-friendly practices, from using sustainable containers for food donations to exploring partnerships with electric vehicle companies to reduce the carbon footprint of deliveries.
                 <br>
+                <b>Real-Time Connections:</b> Our platform connects food donors with local charities and food banks in real time, ensuring that surplus food is collected and delivered quickly, minimizing waste.
                 <br>
-                Our Vision: Our vision is to create a world where surplus food is no longer wasted but repurposed to feed communities in need. We are driven by the belief that technology and innovation can be used for social good, transforming the way we approach food distribution and waste reduction. In the future, we aim to expand Replate’s reach, partner with more organizations, and continue to innovate with new features like smart labeling, gamification, and rewards for frequent donors.
+                <b>Smart Inventory Management:</b> By integrating AI and predictive analytics, Replate helps donors manage their surplus inventory and forecast future needs, reducing overproduction and food waste.
                 <br>
+                <b>Community Impact:</b>With every donation, you are not only reducing waste but also supporting the fight against hunger. We believe in creating a more equitable food system where no meal goes to waste, and every person has access to nutritious food.
+                <!-- <br> -->
                 <br>
-                Join Us in Making a Difference: We invite you to be part of our mission. Whether you are a restaurant, a food provider, or an individual household, your contributions can help reduce food waste, fight hunger, and make our communities more sustainable. Every donation counts, and together, we can create a meaningful impact.
+                <b>Our Vision:</b> Our vision is to create a world where surplus food is no longer wasted but repurposed to feed communities in need. We are driven by the belief that technology and innovation can be used for social good, transforming the way we approach food distribution and waste reduction. In the future, we aim to expand Replate’s reach, partner with more organizations, and continue to innovate with new features like smart labeling, gamification, and rewards for frequent donors.
+                <!-- <br> -->
                 <br>
+                <b>Join Us in Making a Difference:</b> We invite you to be part of our mission. Whether you are a restaurant, a food provider, or an individual household, your contributions can help reduce food waste, fight hunger, and make our communities more sustainable. Every donation counts, and together, we can create a meaningful impact.
+                <!-- <br> -->
                 <br>
-                Thank you for supporting Replate and helping us build a future where no meal goes to waste.</p>
+                <i>Thank you for supporting RePlate and helping us build a future where no meal goes to waste.</i></p>
         </section>
 
         <!-- Donations Leaderboard Section -->
@@ -153,36 +157,14 @@
                             <td>User5</td>
                             <td>--</td>
                         </tr>
-                        <tr>
-                            <td>6</td>
-                            <td>User6</td>
-                            <td>--</td>
-                        </tr>
-                        <tr>
-                            <td>7</td>
-                            <td>User7</td>
-                            <td>--</td>
-                        </tr><tr>
-                            <td>8</td>
-                            <td>User8</td>
-                            <td>--</td>
-                        </tr>
-                        <tr>
-                            <td>9</td>
-                            <td>User9</td>
-                            <td>--</td>
-                        </tr>
-                        <tr>
-                            <td>10</td>
-                            <td>User10</td>
-                            <td>--</td>
-                        </tr>
                     </tbody>
                 </table>
                 
             </div>
         </section>
     </main>
+
+
 
     <!-- Footer Section -->
     <footer>
