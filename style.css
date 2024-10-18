@@ -19,9 +19,10 @@ header {
 }
 
 .menu select{
-    height: 50px;
+    height: 40px;
     margin-right: 800px;
-    
+    border-radius: 15px;
+    padding: 0px 0px 0px 10px;
 }
 
 .header1-buttons{
