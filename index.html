@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Replate - Food Donation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,6 +12,9 @@
     <header>
         <div class="header1">
             <div class="menu">
+                <div>
+                    <i class="fa-solid fa-bars"></i>
+                </div>
                 <select> 
                     <option>Menu</option>
                     <option>Dashboard</option>
@@ -22,28 +26,34 @@
                 </select>
             </div>
             <div class="header1-buttons">
-                <button>Customer Care</button>
-                <button>Pricing</button>
-                <button>Register/Login</button>
+                <div id="custcare">
+                    <div>
+                        <i class="fa-solid fa-headphones-simple"></i>
+                    </div>
+                    <button>Customer Care</button>
+                </div>
+                <div>
+                    <button id="pricing">Pricing</button>
+                </div>
+                <div id="reg">
+                    <div>
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <button >Register/Login</button>
+                </div>
             </div>
         </div>
-            <div class="branding">
-                <div class="logo">Logo</div>
-                <h1 class="project-name">Replate</h1>
-                <a href="#" class="visit-charity-btn">Visit Nearest Charity</a>
+        <div class="header2">
+            <div class="logo">
+                <img src="RePlateicon.png">
             </div>
+            <h1 class="project-name">Replate</h1>
+            <button class="visit-charity-btn">Visit Nearest Charity</button>
         </div>
     </header>
 
     <!-- Main Content Section -->
     <main>
-        <div class="social-links">
-            <ul>
-                <li><a href="#">Social Media 1</a></li>
-                <li><a href="#">Social Media 2</a></li>
-                <li><a href="#">Social Media 3</a></li>
-            </ul>
-        </div>
         <div class="picture">
             <img src="https://via.placeholder.com/500" alt="Donation Image">
         </div>
