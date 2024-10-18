@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 /* Header Styling */
@@ -11,7 +12,7 @@ header {
 }
 
 .header1{
-    background-color: #0e7a12;
+    background-color: #59bc69;
     display: flex;
     justify-content:space-evenly;
     height: 60px;
@@ -35,10 +36,12 @@ header {
     padding: 0px 0px 0px 10px;
     background-color: transparent;
     border: transparent;
+    font-size: 1.1rem;
+    color: white;
 }
 
 .header1-buttons{
-    margin-left: 750px;
+    margin-left: 850px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,12 +63,15 @@ header {
     padding: 0px 10px;
     border: 1.5px solid black;
     border-radius: 20px;
+    font-size: 1.1rem;
 }
 
 #pricing{
     border: 1.5px solid black;
     border-radius: 20px;
     width: 100px;
+    font-size: 1.1rem;
+    color: white;
 }
 
 #reg{
@@ -89,14 +95,14 @@ header {
 .logo img{
     width: 140px;
     height: 140px;
-    margin-right: 500px;
+    margin-right: 450px;
 }
 
 .project-name {
-    font-size: 3rem;
+    font-size: 5rem;
     font-weight: bold;
     color: black;
-    margin-right: 450px;
+    margin-right: 350px;
 }
 
 .visit-charity-btn {
@@ -108,10 +114,10 @@ header {
     height: 130px;
     width: 130px;
     font-size: 1rem;
-    animation: glow 0.5s infinite alternate;
+    animation: glow1 0.5s infinite alternate;
 }
 
-@keyframes glow {
+@keyframes glow1 {
     0% {
         box-shadow: 0 0 5px gold, 0 0 10px gold, 0 0 15px gold;
     }
@@ -121,36 +127,100 @@ header {
 }
 
 /* Main Content Styling */
+.social-links {
+    display: flex;
+    margin-top: 100px;
+    position: fixed;
+    height: 250px;
+    width: 50px;
+    border-radius: 10x;
+}
+
+.social-links ul {
+    list-style: none;
+}
+
+.social-links ul li {
+    background-color: grey;
+    padding-top: 12px;
+    width: 50px;
+    height: 50px;
+    border: 1px solid white;
+}
+
+.social-links ul li i {
+    font-size: 1.7rem;
+}
+
+#topsocial{
+    border-top-right-radius: 10px;
+}
+
+#bottomsocial{
+    border-bottom-right-radius: 10px;
+}
+
 main {
-    padding: 20px;
     text-align: center;
 }
 
+.pic-donate{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .picture img {
-    width: 60%;
-    height: auto;
+    width: 95%;
+    height: 500px;
     margin-bottom: 20px;
 }
 
-.donation-request-btn {
-    display: inline-block;
-    background-color: #4CAF50;
-    color: white;
+.donate-button{
+    width: 400px;
+    height: 200px;
+    margin-left: 80px;
+    margin-right: 40px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px 10px;
+}
+
+@keyframes glow2 {
+    0% {
+        text-shadow: 0 0 5px #fff, 0 0 10px yellow, 0 0 15px yellow, 0 0 20px yellow, 0 0 25px yellow;
+    }
+    100% {
+        text-shadow: 0 0 10px #fff, 0 0 20px yellow, 0 0 30px yellow, 0 0 40px yellow, 0 0 50px yellow;
+    }
+}
+
+.donate-button p{
+    font-size: 2.3rem;
+}
+
+#donation-request-btn {
+    background-color: #59bc69;
+    color: black;
+    width: 360px;
+    height: 50px;
+    font-size: 1.5rem;
     padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-bottom: 20px;
+    border-radius: 10px;
+    animation: glow2 1.5s ease-in-out infinite alternate;
 }
 
 /* Map Section */
 .map-section {
-    background-color: #e7f7ee;
+    background-color: #59bc69;
     padding: 20px;
 }
 
 .map {
     background-color: #ccc;
     height: 300px;
+    width: 100%;
 }
 
 /* Donation Pictures */
@@ -160,22 +230,23 @@ main {
 
 .donation-pictures .pictures img {
     width: 30%;
+    height: 370px;
     margin: 10px;
 }
 
 /* About Us */
 .about-us {
     padding: 20px;
-    background-color: #f1f1f1;
-    margin: 20px 0;
+    height: 550px;
+    background-color: #59bc69;
 }
 
-.about-us h2 {
+.about-us h1 {
     margin-bottom: 10px;
 }
 
 .about-us p {
-    max-width: 800px;
+    max-width: 100%;
     margin: 0 auto;
     font-size: 1.2rem;
 }
@@ -183,12 +254,24 @@ main {
 /* Leaderboard */
 .leaderboard {
     padding: 20px;
-    background-color: #e7f7ee;
+    background-color: white;
 }
 
 .leaderboard-table {
-    background-color: #ccc;
-    height: 200px;
+    display: flex;
+    justify-content: center;
+    background-color: #70b47b;
+    height: 450px;
+}
+
+.leaderboard-table th{
+    font-size: 1.6rem;
+}
+
+.leaderboard-table table, th,td{
+    border: 1px solid black;
+    width: 1600px;
+    border-collapse: collapse;
 }
 
 /* Footer Styling */
