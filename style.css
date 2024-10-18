@@ -1,0 +1,162 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header Styling */
+header {
+    color: white;
+}
+
+.header1{
+    background-color: #0e7a12;
+    display: flex;
+    justify-content:space-evenly;
+    height: 60px;
+    align-items: center;
+}
+
+.menu select{
+    height: 50px;
+    margin-right: 800px;
+    
+}
+
+.header1-buttons{
+    margin-left: 100px;
+}
+
+.branding {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.project-name {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.visit-charity-btn {
+    background-color: white;
+    color: #4CAF50;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* Social Links */
+.social-links {
+    position: absolute;
+    top: 150px;
+    left: 10px;
+}
+
+.social-links ul {
+    list-style: none;
+}
+
+.social-links ul li {
+    margin-bottom: 10px;
+}
+
+.social-links ul li a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+/* Main Content Styling */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.picture img {
+    width: 60%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.donation-request-btn {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* Map Section */
+.map-section {
+    background-color: #e7f7ee;
+    padding: 20px;
+}
+
+.map {
+    background-color: #ccc;
+    height: 300px;
+}
+
+/* Donation Pictures */
+.donation-pictures {
+    margin: 20px 0;
+}
+
+.donation-pictures .pictures img {
+    width: 30%;
+    margin: 10px;
+}
+
+/* About Us */
+.about-us {
+    padding: 20px;
+    background-color: #f1f1f1;
+    margin: 20px 0;
+}
+
+.about-us h2 {
+    margin-bottom: 10px;
+}
+
+.about-us p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+}
+
+/* Leaderboard */
+.leaderboard {
+    padding: 20px;
+    background-color: #e7f7ee;
+}
+
+.leaderboard-table {
+    background-color: #ccc;
+    height: 200px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+    
